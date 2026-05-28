@@ -1,6 +1,6 @@
 # 🔢 NumPath
 
-NumPath is a fun and interactive **Numerology & Life Path Calculator** built with **React + Node.js + MySQL + Ollama**.  
+NumPath is a fun and interactive **Numerology & Life Path Calculator** built with **React + Node.js + Postgresql + Ollama**.  
 It helps users explore their **Life Path Number, Destiny Number, Zodiac Sign, and more** based on their Date of Birth and Name.  
 
 It also includes a **personal AI Chatbot** powered by [Ollama](https://ollama.ai), and a **Blog section** for learning about numerology.
@@ -28,7 +28,7 @@ It also includes a **personal AI Chatbot** powered by [Ollama](https://ollama.ai
 
 **Backend:**  
 - Node.js (Express.js)  
-- MySQL  
+- Postgresql  
 - Axios  
 
 **AI (Chatbot):**  
@@ -110,7 +110,7 @@ ollama run mistral
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-© 2025 Mayank Chauhan
+© 2026 bhumika banswal
 
 
 
