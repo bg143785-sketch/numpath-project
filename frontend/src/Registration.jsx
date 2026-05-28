@@ -3,7 +3,7 @@ import './Registration.css';
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
-const LoginForm = () => {
+const LoginForm = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
@@ -53,22 +53,21 @@ const LoginForm = () => {
 
     // Navigate to profile page
     navigate('/');
-  };  const handleSubmit = async (e) => {
+  }; const handleSubmit = async (e) => {
   e.preventDefault();
 
-  // fake success
   alert("Signup successful (Demo Mode)");
 
-  // fake token
   localStorage.setItem("token", "demo-token");
 
-  // fake user data
   localStorage.setItem("userData", JSON.stringify({
     name: formData.fullName,
     email: formData.email
   }));
 
-  // redirect
+  // 🔥 IMPORTANT FIX (ye missing tha)
+  setIsLoggedIn(true);
+
   navigate("/");
 };
 //    const handleSubmit = async (e) => {
